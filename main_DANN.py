@@ -37,7 +37,7 @@ import scipy.io as scio
 from torch.optim.optimizer import Optimizer
 from sklearn import preprocessing
 from Adversarial import DomainAdversarialLoss
-from model_test import Domain_adaption_model,discriminator,Domain_adaption_model_withoutproto,Domain_adaption_model_withoutproto_withoutpair
+from model import Domain_adaption_model,discriminator,Domain_adaption_model_withoutproto,Domain_adaption_model_withoutproto_withoutpair
 def setup_seed(seed): ## setup the random seed 
     torch.manual_seed(seed)
     if torch.cuda.is_available():
